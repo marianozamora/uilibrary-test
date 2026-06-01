@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background: #F5F4EF;
+}
+
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-thumb { background: rgba(0,0,0,0.14); border-radius: 99px; }
+
+@keyframes modalIn {
+  from { opacity: 0; transform: translateY(10px) scale(0.98); }
+  to   { opacity: 1; transform: none; }
+}
+
+.animate-modal { animation: modalIn 0.2s cubic-bezier(0.16,1,0.3,1); }
+.font-serif-display { font-family: 'Instrument Serif', serif; }
+.font-mono-code { font-family: 'JetBrains Mono', monospace; }
