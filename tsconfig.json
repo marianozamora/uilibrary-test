@@ -14,7 +14,7 @@
     "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "react-jsx",
+    "jsx": "preserve",
     "incremental": true,
     "plugins": [
       {
@@ -23,7 +23,13 @@
     ],
     "paths": {
       "@/*": [
-        "./*"
+        "./app/*"
+      ],
+      "@theme": [
+        "./app/theme/index.ts"
+      ],
+      "@data/*": [
+        "./app/data/*"
       ]
     },
     "target": "ES2017"
